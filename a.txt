@@ -1,5 +1,5 @@
 * CCIE Collaboration
-
+http://www.ciscopress.com/store/ccie-collaboration-quick-reference-9780133845969
 #+BEGIN_SRC text
 Online Sample Chapter
 
