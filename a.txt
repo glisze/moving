@@ -1,0 +1,573 @@
+* CCIE Collaboration
+
+#+BEGIN_SRC text
+Online Sample Chapter
+
+CCIE Collaboration Quick Reference: Cisco Unified Communications Security
+
+Sample Pages
+
+Download the sample pages (includes Chapter 5 and Index)
+
+Table of Contents
+
+Introduction
+
+Chapter 1 Cisco Collaboration Infrastructure 1
+
+Cisco Unified Communications Deployment Models 1
+
+    Single-Site Deployment Model 2
+
+    Multisite WAN with Centralized Call Processing Deployment Model 3
+
+    Multisite WAN with Distributed Call Processing Deployment Model 4
+
+    Clustering over WAN Call Processing Deployment Model 5
+
+Network Services 6
+
+    Dynamic Host Configuration Protocol 6
+
+    Domain Name System 7
+
+    Trivial File Transfer Protocol 8
+
+    Network Time Protocol 11
+
+    Cisco Discovery Protocol 12
+
+    Link Layer Discovery Protocol 14
+
+Power over Ethernet 15
+
+Voice and Data VLANs 16
+
+IP Routing in Cisco Collaboration Campus Environments 17
+
+    Campus Infrastructure Design 17
+
+        Campus Access Layer 18
+
+        Campus Distribution Layer 18
+
+        Campus Core Layer 18
+
+        Campus Routed Access Layer Design 19
+
+IPv6 in Cisco Collaboration Networks 20
+
+    IPv6 Address Types 21
+
+    IPv6 Addressing Model 21
+
+Virtualization in Cisco Collaboration Solutions 23
+
+    Cisco UCS Servers 24
+
+    VMware ESXi for Cisco Collaboration Virtualization 26
+
+    UC Application Install Answer File 26
+
+IP Multicast 27
+
+Wireless in Cisco Collaboration Solutions 28
+
+Chapter 2 Quality of Service (QoS) 31
+
+QoS Requirements for Voice and Video 32
+
+QoS Deployment Architectures 33
+
+Classification and Marking 34
+
+    Layer 2 Marking 34
+
+    Layer 3 Marking 35
+
+    Network-Based Application Recognition 36
+
+    Classification Service Classes 37
+
+    Classification and Marking for Softclients 37
+
+    Classification and Marking for Video Traffic 38
+
+Queuing 38
+
+    Cisco Queuing Toolset 39
+
+    Weighted Random Early Detection 40
+
+WAN QoS Considerations 41
+
+    Traffic Policing and Shaping 41
+
+Link Efficiency Mechanisms 43
+
+    Compressed RTP 43
+
+    Link Fragmentation and Interleaving 43
+
+    Multilink PPP 44
+
+    Frame Relay Forum 12 44
+
+    Voice Activity Detection 45
+
+LAN QoS Considerations 46
+
+    QoS Trust Boundary 46
+
+QoS Considerations for WLAN Endpoints 47
+
+QoS Considerations for Virtual Unified Communications with Cisco UCS 48
+
+Medianet 49
+
+    Medianet QoS Classes of Service 52
+
+Chapter 3 Telephony Standards and Protocols 55
+
+Voice and Video Codecs 55
+
+VoIP Media Transmission Protocols 57
+
+VoIP Signaling Protocols 58
+
+    Skinny Client Control Protocol 58
+
+    Media Gateway Control Protocol 61
+
+    Session Initiation Protocol 65
+
+SIP Session Description Protocol 71
+
+SIP Binary Floor Control Protocol 72
+
+H.323 Gateway, Gatekeeper, and RAS 73
+
+    H.323 Gateway 75
+
+    H.323 Gatekeeper 76
+
+    H.225 and RAS Signaling 77
+
+H.239-Based Dual Video Channels and Cisco Video Equipment Support 82
+
+Analog Telephony 83
+
+    Foreign Exchange Office 83
+
+        FXO Disconnect 83
+
+    Foreign Exchange Station 84
+
+        E&M84
+
+Digital Telephony 85
+
+    Integrated Services Digital Network 85
+
+    Q Signaling Protocol 87
+
+    Channel Associated Signaling 87
+
+    T1 CAS 87
+
+    E1 R2 88
+
+    Non-Facility Associated Signaling 88
+
+Analog and Digital Telephony Call Signaling Elements 89
+
+    Direct Inward Dial 89
+
+    Caller ID 89
+
+    Echo 90
+
+    Trans Hybrid Loss 90
+
+Fax and Modem Protocols 91
+
+    Fax Services over IP Network 91
+
+    Modem Services over IP Network 93
+
+Chapter 4 Cisco Unified Communications Manager 95
+
+CUCM Redundancy and Device Registration 95
+
+CUCM Device Pool 96
+
+    Common Device Configuration 98
+
+Codec Selection 99
+
+CUCM Features 100
+
+    Call Park and Directed Call Park 100
+
+    Call Pickup and Group Pickup 101
+
+    Meet-Me Conference 102
+
+    Busy Lamp Field Speed Dials 102
+
+    CUCM Native Call Queuing 102
+
+    Call Hunting 103
+
+CUCM Media Resources 104
+
+    Annunciator 104
+
+    Conference Bridge 104
+
+    Media Termination Point 105
+
+    Transcoder 105
+
+    Music on Hold 105
+
+    Media Resource Group and Media Resource Group List 106
+
+    Trusted Relay Point 107
+
+CUCM Dial Plan 107
+
+    Partitions and Calling Search Spaces 108
+
+    Translation Patterns 109
+
+    Route Patterns 109
+
+    Route List 109
+
+    Route Group 110
+
+    Globalized Call Routing 110
+
+    Local Route Group 111
+
+    Time-of-Day Routing 112
+
+    Application Dial Rules 112
+
+    Directory Dial Rules 113
+
+    SIP Dial Rules 113
+
+CUCM Digit Manipulation 114
+
+CUCM H.323 and SIP Trunks 116
+
+SIP Uniform Resource Identifier Dialing 117
+
+Intercluster Lookup Service 119
+
+Blended Addressing 122
+
+CUCM Call Admission Control 122
+
+    Locations-Based CAC 123
+
+    Enhanced LCAC 124
+
+    Resource Reservation Protocol 126
+
+    RSVP SIP Preconditions 128
+
+CUCM-Based Call Recording and Silent Monitoring 129
+
+CUCM Mobility 133
+
+    Extension Mobility and Extension Mobility Cross Cluster 133
+
+    Device Mobility 135
+
+    Mobile Connect 136
+
+    Mobile Voice Access 138
+
+Service Advertisement Framework and Call Control Discovery 140
+
+    SAF Architecture 140
+
+    Call Control Discovery Service 142
+
+Chapter 5 Cisco Unified Communications Security 145
+
+Security Policy 145
+
+Threats to Cisco Collaboration Networks 146
+
+    Layer 1 Security 146
+
+    Layer 2 Security 147
+
+        Port Security 147
+
+        DHCP Snooping 148
+
+        Root Guard and BPDU Guard 149
+
+        Dynamic ARP Inspection 149
+
+        802.1x 149
+
+    Layer 3 Security 151
+
+        RFC 2827 Filtering 151
+
+        IP Source Guard 151
+
+        Unicast Reverse Path Forwarding 152
+
+        Routing Protocols Security 152
+
+        Router Hardening 152
+
+     (Firewall) Security for Layers 4 Through 7 152
+
+Firewall Traversal Mechanisms 153
+
+    NAT Traversal 153
+
+    IPsec Tunnels 154
+
+    IP-Based ACLs 154
+
+    Port-Based ACLs 154
+
+Cisco ASA Proxy Features 155
+
+Cisco VPN Phone 156
+
+Application Layer Security 157
+
+CUCM Security By Default 158
+
+CUCM Security Modes 158
+
+    CTL Client and CTL File 159
+
+    Cisco Unified IP Phone Certificates 161
+
+SRTP and TLS 161
+
+Preventing Toll Fraud 162
+
+    CUCM Class of Service 162
+
+    Cisco Voice Gateway Toll-Fraud Prevention Application 163
+
+    Voice Gateway Class of Restriction 164
+
+    Cisco Unity Connection Restriction Rules 165
+
+Chapter 6 Cisco Unity Connection 167
+
+Cisco Unity Connection High Availability 167
+
+Cisco Unity Connection Integration with CUCM and CUCME 168
+
+    Cisco Unity Connection SCCP Voicemail Integration with CUCM 169
+
+    Cisco Unity Connection SIP Voicemail Integration with CUCM 171
+
+    Cisco Unity Connection SCCP Voicemail Integration with CUCME 172
+
+    Cisco Unity Connection SIP Voicemail Integration with CUCME 174
+
+Cisco Unity Connection Dial Plan 175
+
+Call Handlers 176
+
+    Cisco Unity Connection System Call Handlers 176
+
+    Cisco Unity Connection Directory Handlers 178
+
+    Cisco Unity Connection Interview Handlers 179
+
+Cisco Unity Connection Single Inbox 180
+
+Cisco Unity Connection Visual Voicemail 183
+
+Voice Mail for Cisco Jabber 184
+
+Cisco Unity Connection Voicemail Networking 186
+
+    Intrasite Networking 187
+
+    Intersite Networking 188
+
+    Voice Profile for Internet Email (VPIM) Networking 189
+
+Chapter 7 Cisco Unified IM and Presence 191
+
+Cisco Unified Communications Manager IM and Presence Components 191
+
+Cisco Unified CM IM and Presence Cluster 192
+
+Cisco Unified CM IM and Presence Server Integration with CUCM 193
+
+Cisco Jabber 197
+
+Presence Federation 198
+
+    Intradomain Federation 199
+
+    Interdomain Federation 201
+
+Presence Cloud Solutions 202
+
+Group Chat and Compliance 204
+
+    Group Chat 204
+
+    Logging and Compliance 205
+
+        Client-Side IM Logging (History) 205
+
+        Server-Side IM Logging (Compliance) 206
+
+Chapter 8 Cisco Unified Contact Center Express 209
+
+Cisco UCCX Architecture 209
+
+Cisco UCCX Components and Subsystems 210
+
+UCCX ACD/ICD, IVR, and CTI Functions 211
+
+    UCCX ACD Functions 211
+
+    UCCX CTI Functions 213
+
+    UCCX IVR Functions 213
+
+UCCX Deployment Models 214
+
+UCCX Call Flow 215
+
+UCCX Integration with CUCM 216
+
+UCCX Scripting Components 218
+
+Chapter 9 Cisco IOS Unified Communications Applications 225
+
+Cisco Unified Communications Manager Express 225
+
+Basic Cisco Unified CME Setup 226
+
+Cisco Unified CME—Based SCCP Phone Registration 227
+
+Cisco Unified CME—Based SIP Phone Registration 229
+
+Cisco Unified CME Single Number Reach 230
+
+Survivable Remote Site Telephony 232
+
+MGCP Fallback 236
+
+Multicast Music on Hold in SRST 237
+
+Cisco IOS Dial Plan 238
+
+    Voice Translation Rules and Profiles 239
+
+    Cisco IOS Dial-Peer Matching Logic 242
+
+Cisco IOS Media Resources 244
+
+    Cisco IOS DSP Management 244
+
+    Cisco IOS Conferencing Resources 245
+
+    Cisco IOS Transcoding Resources 246
+
+Cisco Unified CME—Based Media Resources 246
+
+    Cisco Unified CME Conferencing and Transcoding 246
+
+Cisco IOS—Based Call Queuing 249
+
+    Cisco Unified CME Basic Automatic Call Distribution 249
+
+    Voice Hunt Groups 252
+
+    Call Blast 253
+
+Cisco Unity Express 254
+
+Cisco Unified CME and CUE Integration 254
+
+CUE Message Waiting Indicator 256
+
+    Outcalling 256
+
+     (SIP) Subscribe Notify 257
+
+    Unsolicited Notify 257
+
+CUE Web Inbox 258
+
+CUE VoiceView Express 258
+
+CUE Auto-Attendant 259
+
+CUE Scripting 261
+
+CUE Voice Profile for Internet Email 263
+
+Cisco IOS Call Admission Control 266
+
+    Local CAC 267
+
+    Reservation-Based CAC 267
+
+    Measurement-Based CAC 268
+
+Cisco IOS CDR Accounting 268
+
+    File Accounting 269
+
+    Syslog-Based CDR Accounting 269
+
+    RADIUS-Based CDR Accounting 269
+
+Cisco Service Advertisement Framework and Call Control Discovery 270
+
+Cisco Unified Border Element 272
+
+    CUBE Redundancy 273
+
+    CUBE SIP Profiles 277
+
+    CUBE Early Offer and Delayed Offer 278
+
+    CUBE DTMF Interworking 279
+
+    CUBE Mid-Call Signaling 281
+
+Chapter 10 Cisco Collaboration Network Management 283
+
+CUCM Serviceability and OS Administration 283
+
+    CUCM Database Replication 283
+
+    CUCM Service Activation 284
+
+CUCM Call Detail Records and Call Management Records 288
+
+CUCM Disaster Recovery 289
+
+User Management 290
+
+Cisco EnergyWise 292
+
+9780133845969    TOC   4/30/2014
+
+
+#+END_SRC
