@@ -1,4 +1,6 @@
-* CCIE Collaboration
+* CCIE Collaboration -*- mode: org -*-
+# COMMENT to be review and taken as a baseline for a learning overview
+This is  taken from the following book, giving credit here:
 http://www.ciscopress.com/store/ccie-collaboration-quick-reference-9780133845969
 #+BEGIN_SRC text
 Online Sample Chapter
